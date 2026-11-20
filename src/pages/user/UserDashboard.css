@@ -1,0 +1,299 @@
+.ud-wrap {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Sidebar */
+.ud-sidebar {
+  background: white;
+  border-right: 0.5px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem 0;
+}
+
+.ud-sidebar-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #27500A;
+  padding: 0 1.25rem 1.25rem;
+  border-bottom: 0.5px solid #dee2e6;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+}
+
+.ud-sidebar-logo span {
+  color: #639922;
+}
+
+.ud-user-info {
+  margin-top: auto;
+  padding: 1rem 1.25rem;
+  border-top: 0.5px solid #dee2e6;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ud-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #EAF3DE;
+  color: #3B6D11;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ud-user-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.ud-user-loc {
+  font-size: 11px;
+  color: #6c757d;
+}
+
+/* Main */
+.ud-main {
+  padding: 1.5rem;
+}
+
+.ud-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.ud-topbar h1 {
+  font-size: 20px;
+  color: #173404;
+}
+
+/* Summary cards */
+.ud-sum-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.ud-sum-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  border: 0.5px solid #dee2e6;
+}
+
+.ud-sum-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3B6D11;
+}
+
+.ud-sum-lbl {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+/* Tabs */
+.ud-tabs {
+  display: flex;
+  gap: 4px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+  border: 0.5px solid #dee2e6;
+}
+
+.ud-tab {
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #6c757d;
+  border: none;
+  background: transparent;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.ud-tab.active {
+  background: white;
+  color: #3B6D11;
+  font-weight: 500;
+  border: 0.5px solid #dee2e6;
+}
+
+/* Booking cards */
+.ud-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ud-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.ud-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.ud-card-num {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ud-card-meta {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 3px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+/* Pills */
+.ud-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.ud-pill {
+  background: #f8f9fa;
+  border: 0.5px solid #dee2e6;
+  border-radius: 8px;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+/* Progress track */
+.ud-track {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.ud-track-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.ud-track-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid #dee2e6;
+  background: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  z-index: 1;
+}
+
+.ud-track-dot.done {
+  background: #639922;
+  border-color: #639922;
+  color: white;
+}
+
+.ud-track-dot.active {
+  background: #EAF3DE;
+  border-color: #639922;
+  color: #3B6D11;
+}
+
+.ud-track-label {
+  font-size: 10px;
+  color: #6c757d;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.ud-track-line {
+  flex: 1;
+  height: 1.5px;
+  background: #dee2e6;
+  margin-top: 10px;
+}
+
+.ud-track-line.done {
+  background: #639922;
+}
+
+/* Card footer */
+.ud-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-top: 0.5px solid #dee2e6;
+}
+
+.ud-card-total {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3B6D11;
+}
+
+.ud-card-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.ud-btn-pay {
+  background: #639922;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.ud-btn-cancel {
+  background: transparent;
+  border: 0.5px solid #F09595;
+  color: #A32D2D;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+}
+
+.ud-empty {
+  text-align: center;
+  padding: 2rem;
+  color: #6c757d;
+  font-size: 13px;
+  background: white;
+  border-radius: 12px;
+  border: 0.5px solid #dee2e6;
+}

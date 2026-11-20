@@ -1,0 +1,287 @@
+.oc-wrap {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.oc-main {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.oc-left {}
+
+.oc-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.oc-topbar h1 {
+  font-size: 20px;
+  color: #173404;
+}
+
+.oc-month-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.oc-month-btn {
+  background: transparent;
+  border: 0.5px solid #dee2e6;
+  color: #6c757d;
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oc-month-label {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 120px;
+  text-align: center;
+}
+
+/* Calendar */
+.oc-cal {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.oc-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  background: #f8f9fa;
+  border-bottom: 0.5px solid #dee2e6;
+}
+
+.oc-wd {
+  padding: 8px 0;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.oc-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.oc-day {
+  min-height: 52px;
+  border-right: 0.5px solid #dee2e6;
+  border-bottom: 0.5px solid #dee2e6;
+  padding: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.oc-day:nth-child(7n) {
+  border-right: none;
+}
+
+.oc-day.empty {
+  cursor: default;
+  background: #f8f9fa;
+}
+
+.oc-day.past {
+  cursor: default;
+  opacity: 0.45;
+}
+
+.oc-day.available:hover {
+  background: #EAF3DE;
+}
+
+.oc-day.blocked {
+  background: #FAEEDA;
+}
+
+.oc-day.booked {
+  background: #EAF3DE;
+  cursor: default;
+}
+
+.oc-day.today-mark {
+  outline: 2px solid #639922;
+  outline-offset: -2px;
+}
+
+.oc-day-num {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.oc-day.past .oc-day-num {
+  color: #6c757d;
+}
+
+.oc-day.blocked .oc-day-num {
+  color: #854F0B;
+}
+
+.oc-day.booked .oc-day-num {
+  color: #27500A;
+}
+
+.oc-day-tag {
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 3px;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.oc-day-tag.blocked {
+  background: #FAC775;
+  color: #633806;
+}
+
+.oc-day-tag.booked {
+  background: #C0DD97;
+  color: #27500A;
+}
+
+/* Legend */
+.oc-legend {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.oc-leg {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.oc-leg-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+/* Right panel */
+.oc-right {}
+
+.oc-right h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #173404;
+  margin-bottom: 1rem;
+}
+
+.oc-info-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.oc-info-title {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.oc-info-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3B6D11;
+}
+
+.oc-info-sub {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+.oc-block-section {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.oc-block-title {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.oc-date-input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 0.5px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  margin-bottom: 8px;
+  outline: none;
+}
+
+.oc-date-input:focus {
+  border-color: #639922;
+}
+
+.oc-block-btn {
+  width: 100%;
+  background: #639922;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.oc-unblock-btn {
+  width: 100%;
+  background: transparent;
+  border: 0.5px solid #F09595;
+  color: #A32D2D;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.oc-tip {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #6c757d;
+  line-height: 1.5;
+  display: flex;
+  gap: 7px;
+}

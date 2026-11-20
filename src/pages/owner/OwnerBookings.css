@@ -1,0 +1,253 @@
+.ob-wrap {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.ob-main {
+  padding: 1.5rem;
+}
+
+.ob-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.ob-topbar h1 {
+  font-size: 20px;
+  color: #173404;
+}
+
+/* Summary */
+.ob-sum-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.ob-sum-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.ob-sum-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3B6D11;
+}
+
+.ob-sum-lbl {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+/* Tabs */
+.ob-tabs {
+  display: flex;
+  gap: 4px;
+  background: white;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 1.25rem;
+  width: fit-content;
+  border: 0.5px solid #dee2e6;
+}
+
+.ob-tab {
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #6c757d;
+  border: none;
+  background: transparent;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.ob-tab.active {
+  background: #EAF3DE;
+  color: #3B6D11;
+  font-weight: 500;
+  border: 0.5px solid #dee2e6;
+}
+
+/* Request cards */
+.ob-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ob-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.ob-card.new {
+  border-left: 3px solid #639922;
+}
+
+.ob-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.ob-farmer-av {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #EAF3DE;
+  color: #3B6D11;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ob-farmer-name {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.ob-farmer-meta {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 3px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ob-farmer-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.ob-card-right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.ob-card-time {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Service pills */
+.ob-svcs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.ob-svc-pill {
+  background: #f8f9fa;
+  border: 0.5px solid #dee2e6;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Detail grid */
+.ob-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.ob-detail-box {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.ob-detail-lbl {
+  font-size: 11px;
+  color: #6c757d;
+  margin-bottom: 2px;
+}
+
+.ob-detail-val {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Action buttons */
+.ob-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ob-btn-approve {
+  background: #639922;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ob-btn-call {
+  background: transparent;
+  border: 0.5px solid #639922;
+  color: #3B6D11;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ob-btn-reject {
+  background: transparent;
+  border: 0.5px solid #F09595;
+  color: #A32D2D;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ob-empty {
+  text-align: center;
+  padding: 2.5rem;
+  color: #6c757d;
+  font-size: 13px;
+  background: white;
+  border-radius: 12px;
+  border: 0.5px solid #dee2e6;
+}

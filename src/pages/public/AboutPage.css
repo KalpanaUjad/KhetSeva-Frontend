@@ -1,0 +1,280 @@
+.ab-hero {
+  background: #173404;
+  padding: 2.5rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.ab-hero-tag {
+  display: inline-block;
+  background: rgba(99,153,34,0.25);
+  color: #C0DD97;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.ab-hero h1 {
+  color: #EAF3DE;
+  font-size: 32px;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.ab-hero p {
+  font-size: 14px;
+  color: #97C459;
+  line-height: 1.7;
+}
+
+.ab-hero-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ab-hero-stat {
+  background: rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.ab-hero-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #C0DD97;
+}
+
+.ab-hero-stat-lbl {
+  font-size: 12px;
+  color: #97C459;
+  margin-top: 2px;
+}
+
+/* Story */
+.ab-story {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  background: white;
+}
+
+.ab-section-tag {
+  font-size: 12px;
+  color: #639922;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.ab-story h2 {
+  color: #173404;
+  margin-bottom: 1rem;
+}
+
+.ab-story p {
+  font-size: 14px;
+  color: #6c757d;
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.ab-owner-card {
+  background: #EAF3DE;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ab-owner-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ab-owner-av {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #639922;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ab-owner-name {
+  font-size: 17px;
+  font-weight: 500;
+  color: #173404;
+}
+
+.ab-owner-role {
+  font-size: 13px;
+  color: #3B6D11;
+  margin-top: 2px;
+}
+
+.ab-owner-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ab-owner-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #27500A;
+}
+
+/* Equipment */
+.ab-equipment {
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.ab-equipment h2 {
+  color: #173404;
+  margin-bottom: 1.25rem;
+}
+
+.ab-eq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.ab-eq-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.ab-eq-icon {
+  width: 44px;
+  height: 44px;
+  background: #EAF3DE;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.ab-eq-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.ab-eq-detail {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Values */
+.ab-values {
+  padding: 2rem;
+  background: white;
+}
+
+.ab-values h2 {
+  color: #173404;
+  margin-bottom: 1.25rem;
+}
+
+.ab-val-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.ab-val-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.ab-val-icon {
+  width: 36px;
+  height: 36px;
+  background: #EAF3DE;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.ab-val-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.ab-val-desc {
+  font-size: 12px;
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+/* CTA */
+.ab-cta {
+  background: #EAF3DE;
+  padding: 2rem;
+  text-align: center;
+}
+
+.ab-cta h2 {
+  color: #173404;
+  margin-bottom: 0.5rem;
+}
+
+.ab-cta p {
+  font-size: 14px;
+  color: #3B6D11;
+  margin-bottom: 1.25rem;
+}
+
+/* Footer */
+.ab-footer {
+  padding: 1.25rem 2rem;
+  border-top: 0.5px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.ab-footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  font-weight: 900;
+  color: #27500A;
+}
+
+.ab-footer-logo span {
+  color: #639922;
+}
+
+.ab-footer-copy {
+  font-size: 12px;
+  color: #6c757d;
+}

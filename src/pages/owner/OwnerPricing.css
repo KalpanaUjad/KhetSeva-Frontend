@@ -1,0 +1,249 @@
+.op-wrap {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.op-main {
+  padding: 1.5rem;
+}
+
+.op-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.op-topbar h1 {
+  font-size: 20px;
+  color: #173404;
+}
+
+.op-info {
+  background: #EAF3DE;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+  color: #27500A;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 1.25rem;
+}
+
+.op-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.op-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.op-card.editing {
+  border-color: #639922;
+}
+
+.op-card-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.op-icon {
+  width: 40px;
+  height: 40px;
+  background: #EAF3DE;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.op-card.editing .op-icon {
+  background: #C0DD97;
+}
+
+.op-svc-name {
+  font-size: 15px;
+  font-weight: 500;
+  flex: 1;
+}
+
+.op-svc-desc {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+.op-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.op-toggle-label {
+  font-size: 13px;
+}
+
+.op-switch {
+  width: 36px;
+  height: 20px;
+  border-radius: 10px;
+  background: #639922;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.2s;
+  flex-shrink: 0;
+  border: none;
+}
+
+.op-switch.off {
+  background: #dee2e6;
+}
+
+.op-switch-dot {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 18px;
+  transition: left 0.2s;
+  pointer-events: none;
+}
+
+.op-switch.off .op-switch-dot {
+  left: 2px;
+}
+
+/* Rate display */
+.op-rate-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 0.5px solid #dee2e6;
+}
+
+.op-current-rate {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3B6D11;
+}
+
+.op-current-unit {
+  font-size: 13px;
+  color: #6c757d;
+  font-weight: 400;
+}
+
+.op-edit-btn {
+  background: transparent;
+  border: 0.5px solid #dee2e6;
+  color: #6c757d;
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+/* Edit form */
+.op-edit-form {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 0.5px solid #C0DD97;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.op-edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.op-edit-label {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.op-edit-input-row {
+  display: flex;
+  align-items: center;
+  border: 0.5px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.op-edit-prefix {
+  padding: 0 10px;
+  background: #f8f9fa;
+  font-size: 13px;
+  color: #6c757d;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  border-right: 0.5px solid #dee2e6;
+}
+
+.op-edit-input {
+  border: none;
+  padding: 0 10px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  height: 34px;
+  width: 100px;
+  outline: none;
+}
+
+.op-edit-suffix {
+  padding: 0 10px;
+  background: #f8f9fa;
+  font-size: 12px;
+  color: #6c757d;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  border-left: 0.5px solid #dee2e6;
+}
+
+.op-save-btn {
+  background: #639922;
+  color: white;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.op-cancel-btn {
+  background: transparent;
+  border: 0.5px solid #dee2e6;
+  color: #6c757d;
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+}

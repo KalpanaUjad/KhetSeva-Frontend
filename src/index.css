@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+  --ks-green-dark:   #173404;
+  --ks-green-mid:    #27500A;
+  --ks-green:        #3B6D11;
+  --ks-green-light:  #639922;
+  --ks-green-pale:   #EAF3DE;
+  --ks-green-border: #C0DD97;
+  --ks-orange:       #854F0B;
+  --ks-orange-pale:  #FAEEDA;
+  --ks-red:          #A32D2D;
+  --ks-red-pale:     #FCEBEB;
+  --ks-blue:         #185FA5;
+  --ks-blue-pale:    #E6F1FB;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+.btn-ks-primary {
+  background-color: var(--ks-green-light);
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-ks-primary:hover {
+  background-color: var(--ks-green);
+  color: white;
+}
+
+.btn-ks-outline {
+  background-color: transparent;
+  color: var(--ks-green);
+  border: 1px solid var(--ks-green-light);
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn-ks-outline:hover {
+  background-color: var(--ks-green-pale);
+}
+
+.ks-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.badge-pending {
+  background: var(--ks-orange-pale);
+  color: var(--ks-orange);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-confirmed {
+  background: var(--ks-green-pale);
+  color: var(--ks-green);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-completed {
+  background: var(--ks-blue-pale);
+  color: var(--ks-blue);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.badge-cancelled {
+  background: var(--ks-red-pale);
+  color: var(--ks-red);
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.ks-sidebar {
+  width: 200px;
+  min-height: 100vh;
+  background: white;
+  border-right: 0.5px solid #dee2e6;
+  display: flex;
+  flex-direction: column;
+}
+
+.ks-sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 1.25rem;
+  font-size: 14px;
+  color: #6c757d;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ks-sidebar-item:hover {
+  background: var(--ks-green-pale);
+  color: var(--ks-green);
+}
+
+.ks-sidebar-item.active {
+  background: var(--ks-green-pale);
+  color: var(--ks-green);
+  font-weight: 500;
+  border-right: 2px solid var(--ks-green-light);
+}

@@ -1,0 +1,247 @@
+.oaj-wrap {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+.oaj-main {
+  padding: 1.5rem;
+}
+
+.oaj-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.oaj-topbar h1 {
+  font-size: 20px;
+  color: #173404;
+}
+
+.oaj-topbar-date {
+  font-size: 13px;
+  color: #6c757d;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Summary */
+.oaj-sum-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.oaj-sum-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.oaj-sum-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3B6D11;
+}
+
+.oaj-sum-lbl {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+/* Job cards */
+.oaj-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.oaj-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.oaj-card.today {
+  border-left: 3px solid #639922;
+}
+
+.oaj-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.oaj-farmer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.oaj-farmer-av {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #EAF3DE;
+  color: #3B6D11;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.oaj-farmer-name {
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.oaj-today-tag {
+  font-size: 11px;
+  color: #639922;
+  font-weight: 500;
+  background: #EAF3DE;
+  padding: 2px 8px;
+  border-radius: 20px;
+}
+
+.oaj-farmer-meta {
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 3px;
+  display: flex;
+  gap: 12px;
+}
+
+.oaj-farmer-meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.oaj-date-badge {
+  background: #EAF3DE;
+  color: #27500A;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Service pills */
+.oaj-svcs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.oaj-svc-pill {
+  background: #f8f9fa;
+  border: 0.5px solid #dee2e6;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Detail grid */
+.oaj-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.oaj-detail-box {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+
+.oaj-detail-lbl {
+  font-size: 11px;
+  color: #6c757d;
+  margin-bottom: 2px;
+}
+
+.oaj-detail-val {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Actions */
+.oaj-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.oaj-btn-done {
+  background: #639922;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.oaj-btn-call {
+  background: transparent;
+  border: 0.5px solid #639922;
+  color: #3B6D11;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.oaj-btn-cancel {
+  background: transparent;
+  border: 0.5px solid #F09595;
+  color: #A32D2D;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+}
+
+.oaj-empty {
+  text-align: center;
+  padding: 2.5rem;
+  color: #6c757d;
+  font-size: 13px;
+  background: white;
+  border-radius: 12px;
+  border: 0.5px solid #dee2e6;
+}

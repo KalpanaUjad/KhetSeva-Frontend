@@ -1,0 +1,378 @@
+/* Hero */
+.home-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 3rem 2rem 2rem;
+  background: white;
+}
+
+.home-hero-tag {
+  display: inline-block;
+  background: #EAF3DE;
+  color: #3B6D11;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+
+.home-hero h1 {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1.15;
+  color: #173404;
+  margin-bottom: 1rem;
+}
+
+.home-hero h1 em {
+  color: #639922;
+  font-style: normal;
+}
+
+.home-hero p {
+  font-size: 15px;
+  color: #6c757d;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.home-hero-btns {
+  display: flex;
+  gap: 12px;
+}
+
+.home-hero-visual {
+  background: #EAF3DE;
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.home-exp-badge {
+  background: #639922;
+  color: white;
+  border-radius: 12px;
+  padding: 12px 16px;
+}
+
+.home-exp-badge .big {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.home-exp-badge .sub {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.home-stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.home-stat {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0.5px solid #dee2e6;
+}
+
+.home-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3B6D11;
+}
+
+.home-stat-label {
+  font-size: 11px;
+  color: #6c757d;
+}
+
+/* Services */
+.home-services {
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.home-section-tag {
+  font-size: 12px;
+  color: #639922;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.home-section-title {
+  color: #173404;
+  margin-bottom: 1.5rem;
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+}
+
+.home-svc-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.home-svc-card:hover {
+  border-color: #639922;
+}
+
+.home-svc-icon {
+  width: 44px;
+  height: 44px;
+  background: #EAF3DE;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.home-svc-name {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.home-svc-rate {
+  font-size: 12px;
+  color: #639922;
+  font-weight: 500;
+}
+
+/* How it works */
+.home-how {
+  padding: 2rem;
+  background: white;
+}
+
+.home-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.home-step {
+  text-align: center;
+  padding: 1rem;
+}
+
+.home-step-num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #EAF3DE;
+  color: #3B6D11;
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  border: 1.5px solid #C0DD97;
+}
+
+.home-step-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.home-step-desc {
+  font-size: 12px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+/* About strip */
+.home-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background: #173404;
+  align-items: center;
+}
+
+.home-about-tag {
+  font-size: 12px;
+  color: #97C459;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.home-about h2 {
+  color: #EAF3DE;
+  margin-bottom: 1rem;
+}
+
+.home-about p {
+  font-size: 14px;
+  color: #97C459;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.home-about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.home-about-stat {
+  background: rgba(255,255,255,0.07);
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.home-about-stat-num {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #C0DD97;
+}
+
+.home-about-stat-lbl {
+  font-size: 12px;
+  color: #97C459;
+  margin-top: 2px;
+}
+
+/* Reviews */
+.home-reviews {
+  padding: 2rem;
+  background: #f8f9fa;
+}
+
+.home-reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.home-review-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.home-review-stars {
+  color: #639922;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.home-review-text {
+  font-size: 13px;
+  color: #6c757d;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.home-review-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-review-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #EAF3DE;
+  color: #3B6D11;
+  font-size: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.home-review-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.home-review-loc {
+  font-size: 11px;
+  color: #6c757d;
+}
+
+/* CTA */
+.home-cta {
+  padding: 2.5rem 2rem;
+  text-align: center;
+  background: #EAF3DE;
+}
+
+.home-cta h2 {
+  color: #173404;
+  margin-bottom: 0.5rem;
+}
+
+.home-cta p {
+  font-size: 14px;
+  color: #3B6D11;
+  margin-bottom: 1.5rem;
+}
+
+/* Footer */
+.home-footer {
+  padding: 1.5rem 2rem;
+  border-top: 0.5px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.home-footer-logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 900;
+  color: #27500A;
+}
+
+.home-footer-logo span {
+  color: #639922;
+}
+
+.home-footer-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.home-footer-link {
+  font-size: 13px;
+  color: #6c757d;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.home-footer-copy {
+  font-size: 12px;
+  color: #6c757d;
+}

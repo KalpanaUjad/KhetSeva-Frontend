@@ -1,0 +1,397 @@
+/* Page hero */
+.svc-page-hero {
+  background: #173404;
+  padding: 2rem;
+  text-align: center;
+}
+
+.svc-page-hero-tag {
+  display: inline-block;
+  background: rgba(99, 153, 34, 0.25);
+  color: #C0DD97;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 0.75rem;
+}
+
+.svc-page-hero h1 {
+  color: #EAF3DE;
+  font-size: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.svc-page-hero p {
+  font-size: 14px;
+  color: #97C459;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+/* Body layout */
+.svc-body {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  align-items: start;
+}
+
+/* Filter row */
+.svc-filter-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
+.svc-filter-btn {
+  border: 0.5px solid #dee2e6;
+  background: white;
+  color: #6c757d;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+}
+
+.svc-filter-btn.active {
+  background: #EAF3DE;
+  border-color: #639922;
+  color: #3B6D11;
+  font-weight: 500;
+}
+
+/* Service cards */
+.svc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.svc-card {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.svc-card:hover {
+  border-color: #97C459;
+}
+
+.svc-card.selected {
+  border: 1.5px solid #639922;
+  background: #EAF3DE;
+}
+
+.svc-card-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.svc-icon {
+  width: 44px;
+  height: 44px;
+  background: #EAF3DE;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.svc-card.selected .svc-icon {
+  background: #C0DD97;
+}
+
+.svc-info {
+  flex: 1;
+}
+
+.svc-name {
+  font-size: 15px;
+  font-weight: 500;
+  color: #212529;
+  margin-bottom: 3px;
+}
+
+.svc-desc {
+  font-size: 12px;
+  color: #6c757d;
+  line-height: 1.5;
+}
+
+.svc-right {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.svc-rate {
+  font-size: 15px;
+  font-weight: 500;
+  color: #3B6D11;
+}
+
+.svc-unit {
+  font-size: 11px;
+  color: #6c757d;
+}
+
+.svc-add-btn {
+  border: 0.5px solid #639922;
+  background: transparent;
+  color: #3B6D11;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  margin-top: 8px;
+  font-weight: 500;
+}
+
+.svc-card.selected .svc-add-btn {
+  background: #639922;
+  color: white;
+  border-color: #639922;
+}
+
+/* Controls */
+.svc-controls {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 0.5px solid #C0DD97;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.svc-ctrl-label {
+  font-size: 12px;
+  color: #3B6D11;
+  font-weight: 500;
+  min-width: 60px;
+}
+
+.svc-qty-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.svc-qty-btn {
+  width: 28px;
+  height: 28px;
+  border: 0.5px solid #639922;
+  background: transparent;
+  color: #3B6D11;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.svc-qty-val {
+  font-size: 15px;
+  font-weight: 500;
+  min-width: 32px;
+  text-align: center;
+}
+
+.svc-qty-unit {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.svc-subtotal {
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3B6D11;
+}
+
+/* Cart */
+.svc-cart {
+  background: white;
+  border: 0.5px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.25rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.svc-cart-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #173404;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.svc-cart-empty {
+  text-align: center;
+  padding: 2rem 0;
+  color: #6c757d;
+  font-size: 13px;
+}
+
+.svc-cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+
+.svc-cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.svc-ci-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.svc-ci-detail {
+  font-size: 11px;
+  color: #6c757d;
+  margin-top: 2px;
+}
+
+.svc-ci-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #3B6D11;
+}
+
+.svc-divider {
+  border: none;
+  border-top: 0.5px solid #dee2e6;
+  margin: 12px 0;
+}
+
+.svc-total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.svc-total-label {
+  font-size: 13px;
+  color: #6c757d;
+}
+
+.svc-total-val {
+  font-size: 13px;
+  color: #212529;
+}
+
+.svc-grand-label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.svc-grand-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #3B6D11;
+}
+
+/* Booking form inside cart */
+.svc-date-section {
+  margin: 1rem 0;
+}
+
+.svc-date-label {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.svc-date-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 0.5px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.svc-addr-input {
+  width: 100%;
+  padding: 8px 12px;
+  border: 0.5px solid #dee2e6;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'DM Sans', sans-serif;
+  resize: none;
+  margin-top: 8px;
+}
+
+.svc-avail-note {
+  background: #EAF3DE;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #3B6D11;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.svc-book-btn {
+  width: 100%;
+  background: #639922;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.svc-book-btn:disabled {
+  background: #C0DD97;
+  color: #EAF3DE;
+  cursor: not-allowed;
+}
+
+.svc-login-note {
+  text-align: center;
+  font-size: 12px;
+  color: #6c757d;
+  margin-top: 8px;
+}
+
+.svc-login-note a {
+  color: #3B6D11;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
