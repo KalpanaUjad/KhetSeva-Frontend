@@ -1,16 +1,42 @@
-# React + Vite
+# KhetSeva – Farm Service Booking Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Live Demo:** https://khetseva-frontend.onrender.com/
 
-Currently, two official plugins are available:
+KhetSeva is a full-stack web application that connects farmers with tractor and agricultural service owners. Farmers can browse available services, request bookings, track booking status, and make payments. Service owners can manage services, approve or reject requests, and track their earnings.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+### Farmer
+- Register and log in securely.
+- Browse available agricultural services.
+- Request services by providing required details, such as land area.
+- Track booking status and view booking history.
+- Make payments for completed services.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Service Owner
+- Manage agricultural services (add, update, and delete).
+- View incoming booking requests.
+- Approve or reject booking requests.
+- Track bookings, payments, and earnings.
+- View service and payment information.
 
-## Expanding the ESLint configuration
+## Technology Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:** React.js, JavaScript, HTML, CSS
+
+**Backend:** Java, Spring Boot, Spring Security, REST APIs
+
+**Database:** MySQL
+
+**Deployment:** Render, Enzonic
+
+## Project Repositories
+
+- **Frontend:** https://github.com/KalpanaUjad/KhetSeva-Frontend
+- **Backend:** https://github.com/KalpanaUjad/KhetSeva-Backend
+
+## Live Application
+
+https://khetseva-frontend.onrender.com/
+
+*Note: The application is deployed using free hosting services. The backend or database may take some time to respond after periods of inactivity.*
